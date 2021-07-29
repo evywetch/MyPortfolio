@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.container > div {
+  font-size: 6rem;
+  flex: 1;
+  font-weight: 800;
+  padding-top: calc(100vh / 3);
+}
+.container > div a {
+  color: #db096b;
+}
