@@ -1,23 +1,23 @@
-import './Home.css';
+import '../css/Home.css';
 import React from 'react';
+import Link from './Link.js';
 
 class Home extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <div>
-          <a className="item">Hello!</a>
+      <div className="home">
+        <div className="links">
+          <Link href="/about" textHover="About">
+            Hello
+          </Link>
+          <Link href="/works" textHover="Works">
+            I am
+          </Link>
+          <Link href="/contact" textHover="Contact">
+            Evy
+          </Link>
         </div>
-
-        <div>
-          <a className="item">I am</a>
-        </div>
-
-        <div>
-          {' '}
-          <a className="item">Evy</a>
-        </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
