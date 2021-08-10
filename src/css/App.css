@@ -1,5 +1,6 @@
 html,
 body {
+  font-size: 62.5%; /* use 62.5%(10px) makes it easier to use rem with other elements. */
   height: 100%;
   margin: 0;
   line-height: 1;

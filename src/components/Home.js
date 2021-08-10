@@ -3,20 +3,26 @@ import React from 'react';
 import Link from './Link.js';
 
 class Home extends React.Component {
-  animation = true;
   render() {
+    const animation = true;
     return (
       <div className="home">
         <div className="links">
-          <Link href="/about" textHover="About" animation={this.animation}>
-            Hello
-          </Link>
-          <Link href="/works" textHover="Works" animation={this.animation}>
-            I am
-          </Link>
-          <Link href="/contact" textHover="Contact" animation={this.animation}>
-            Evy
-          </Link>
+          <div>
+            <Link href="/about" textHover="About" animation={animation}>
+              Hello
+            </Link>
+          </div>
+          <div>
+            <Link href="/works" textHover="Works" animation={animation}>
+              I am
+            </Link>
+          </div>
+          <div>
+            <Link href="/contact" textHover="Contact" animation={animation}>
+              Evy
+            </Link>
+          </div>
         </div>
       </div>
     );

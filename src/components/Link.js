@@ -30,31 +30,27 @@ class Link extends React.Component {
   render() {
     if (this.props.animation) {
       return (
-        <div>
-          <a
-            className="item"
-            href={this.props.href}
-            onClick={this.onclick}
-            onMouseOver={this.onMouseOver}
-            onMouseLeave={this.onMouseLeave}
-            ref={this.linkRef}
-          >
-            {this.props.children}
-          </a>
-        </div>
+        <a
+          className="item"
+          href={this.props.href}
+          onClick={this.onclick}
+          onMouseOver={this.onMouseOver}
+          onMouseLeave={this.onMouseLeave}
+          ref={this.linkRef}
+        >
+          {this.props.children}
+        </a>
       );
     } else {
       return (
-        <div>
-          <a
-            className="item"
-            href={this.props.href}
-            onClick={this.onclick}
-            ref={this.linkRef}
-          >
-            {this.props.children}
-          </a>
-        </div>
+        <a
+          className="item"
+          href={this.props.href}
+          onClick={this.onclick}
+          ref={this.linkRef}
+        >
+          {this.props.children}
+        </a>
       );
     }
   }
