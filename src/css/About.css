@@ -10,11 +10,13 @@
 }
 .home-link a {
   font-size: 3rem;
+  padding: 10px 0;
 }
-a:hover {
+
+.home-link a:hover {
   color: black;
-  margin-right: 10%;
-  transition: margin 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  padding-right: 10%;
+  transition: padding 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 h1 {
   font-size: 5rem;
