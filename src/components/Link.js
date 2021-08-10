@@ -8,7 +8,6 @@ NOTE: Duty of this Link class:
 
 class Link extends React.Component {
   linkRef = React.createRef();
-  animation = false;
 
   onClick = (event) => {
     event.preventDefault();
@@ -19,33 +18,45 @@ class Link extends React.Component {
     // Communicate over to the Route component that the URL has just changed and the Route can listen to it.
     window.dispatchEvent(navEvent);
   };
-  // Create animation(text change + text slides)when user hovers the link
+  // Change text when user hovers a link
   onMouseOver = (e) => {
     e.target.innerHTML = this.props.textHover;
-    this.animation = true;
   };
-  // Stop animation and bring everything back to basic
+  // Switch text back to original when user leaves a link
   onMouseLeave = () => {
     this.linkRef.current.innerHTML = this.props.children;
-    this.animation = false;
   };
 
   render() {
-    const active = this.animation ? 'active' : '';
-    return (
-      <div className={active}>
-        <a
-          className="item"
-          href={this.props.href}
-          onClick={this.onclick}
-          onMouseOver={this.onMouseOver}
-          onMouseLeave={this.onMouseLeave}
-          ref={this.linkRef}
-        >
-          {this.props.children}
-        </a>
-      </div>
-    );
+    if (this.props.animation) {
+      return (
+        <div>
+          <a
+            className="item"
+            href={this.props.href}
+            onClick={this.onclick}
+            onMouseOver={this.onMouseOver}
+            onMouseLeave={this.onMouseLeave}
+            ref={this.linkRef}
+          >
+            {this.props.children}
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <a
+            className="item"
+            href={this.props.href}
+            onClick={this.onclick}
+            ref={this.linkRef}
+          >
+            {this.props.children}
+          </a>
+        </div>
+      );
+    }
   }
 }
 
