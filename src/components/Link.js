@@ -19,11 +19,12 @@ class Link extends React.Component {
     // Communicate over to the Route component that the URL has just changed and the Route can listen to it.
     window.dispatchEvent(navEvent);
   };
-
+  // Create animation(text change + text slides)when user hovers the link
   onMouseOver = (e) => {
     e.target.innerHTML = this.props.textHover;
     this.animation = true;
   };
+  // Stop animation and bring everything back to basic
   onMouseLeave = () => {
     this.linkRef.current.innerHTML = this.props.children;
     this.animation = false;
