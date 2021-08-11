@@ -6,7 +6,7 @@ class About extends React.Component {
   render() {
     const animation = true;
     return (
-      <div className="container">
+      <div className="container-about">
         <div className="home-link">
           <Link href="/" textHover="Back Home" animation={animation}>
             Evy.Home
