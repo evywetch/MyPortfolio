@@ -8,8 +8,8 @@ class About extends React.Component {
     return (
       <div className="container-about">
         <div className="home-link">
-          <Link href="/" textHover="Back Home" animation={animation}>
-            Evy.Home
+          <Link href="/" textHover="Evy.home" animation={animation}>
+            Evy
           </Link>
         </div>
         <div className="content">

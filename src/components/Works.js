@@ -7,8 +7,8 @@ class Works extends React.Component {
       <div>
         <div>Works</div>
         <button>
-          <Link href="/" textHover="Back Home">
-            Back Home
+          <Link href="/" textHover="Evy.home">
+            Evy
           </Link>
         </button>
       </div>
