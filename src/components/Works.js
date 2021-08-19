@@ -1,16 +1,20 @@
+import '../css/Works.css';
 import React from 'react';
 import Link from './Link';
 
 class Works extends React.Component {
   render() {
+    const animation = true;
     return (
-      <div>
-        <div>Works</div>
-        <button>
-          <Link href="/" textHover="Evy.home">
+      <div className='sub-container'>
+        <div className='home-link'>
+          <Link href="/" textHover="Evy.home" animation={animation}>
             Evy
           </Link>
-        </button>
+        </div>
+        <div className='content'>
+        works
+        </div>
       </div>
     );
   }

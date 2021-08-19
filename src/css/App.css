@@ -15,3 +15,34 @@ body {
 .container{
   overflow: scroll;
 }
+/* container for every page */
+.sub-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 100em;
+  max-width: 150em;
+  margin: 0 auto;
+ 
+}
+/* For back home link in every page */
+.home-link {
+  display: flex;
+  justify-content: flex-end;
+  margin: 35px;
+}
+.home-link a {
+  font-size: 3rem;
+  padding: 10px 0;
+}
+
+.home-link a:hover {
+  color: black;
+  padding-right: 5%;
+  transition: padding 0.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* For content in every page */
+.content {
+  font-size: 2rem;
+}
