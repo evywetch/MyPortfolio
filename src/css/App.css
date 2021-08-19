@@ -12,3 +12,6 @@ body {
 #root {
   height: 100%;
 }
+.container{
+  overflow: scroll;
+}
