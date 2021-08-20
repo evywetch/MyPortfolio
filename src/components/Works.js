@@ -19,13 +19,19 @@ class Works extends React.Component {
 
         <div className='work'>
           <p>A Budgety app, built with Javascript, CSS, HTML and module methodology</p>
-        <img src="/images/Budgety.png" alt='Map app'/>
+        <img src="/images/Budgety.png" alt='Budgety app'/>
         <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
         </div>
 
         <div className='work'>
           <p>A Mapty app, built with JS(ES6), HTML, CSS, DOM, Geolocation API, Leaflet library and Local Storage.</p>
-        <img src="/images/Mapty.png" alt='Map app'/>
+        <img src="/images/Mapty.png" alt='Mapty app'/>
+        <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
+        </div>
+
+        <div className='work'>
+          <p>A Youtube videos search app, built with React and connect with Youtube API.</p>
+        <img src="/images/Videos.png" alt='Videos app'/>
         <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
         </div>
 
