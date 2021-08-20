@@ -1,9 +1,15 @@
 .work{
     min-width: 100em;
     max-width: 150em;
-    margin: 0 auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
 }
 img{
     width:1000px;
     height: 600px;
+}
+.work-link{
+    margin: 20px;
+    font-size: 1.8rem;
 }

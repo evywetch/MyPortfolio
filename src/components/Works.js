@@ -20,13 +20,13 @@ class Works extends React.Component {
         <div className='work'>
           <p>A Budgety app, built with Javascript, CSS, HTML and module methodology</p>
         <img src="/images/Budgety.png" alt='Map app'/>
-        <a><i class="far fa-hand-point-right"></i></a>
+        <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
         </div>
 
         <div className='work'>
           <p>A Mapty app, built with JS(ES6), HTML, CSS, DOM, Geolocation API, Leaflet library and Local Storage.</p>
         <img src="/images/Mapty.png" alt='Map app'/>
-        <a></a>
+        <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
         </div>
 
         </div>
