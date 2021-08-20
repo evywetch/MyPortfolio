@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 .home {
-  background-image: url('../images/rdam.jpg'); /* access a foto from src */
+  background-image: url('../background-image/rdam.jpg'); /* access a foto from src */
   background-size: 100% 100%;
   font-size: 12rem;
   flex: 1;
