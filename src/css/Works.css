@@ -1,0 +1,9 @@
+.work{
+    min-width: 100em;
+    max-width: 150em;
+    margin: 0 auto;
+}
+img{
+    width:1000px;
+    height: 600px;
+}
