@@ -35,6 +35,15 @@ class Works extends React.Component {
         <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
         </div>
 
+        <div className='work'>
+          <p>A Widgets app.</p>
+          
+        <img src="/images/widgets.png" alt='Widgets app'/>
+        
+
+        <a class='work-link' href='#'><i class="far fa-hand-point-right"></i> Click here to try it</a>
+        </div>
+
         </div>
       </div>
     );
