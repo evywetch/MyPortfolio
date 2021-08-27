@@ -3,6 +3,12 @@ import React from 'react';
 import Link from './Link';
 
 class Contact extends React.Component {
+ onClick = (event)=>{
+   if(event.metaKey || event.ctrlKey){
+     return;
+   }
+
+  }
   render() {
     const animation = true;
     return (
@@ -15,7 +21,8 @@ class Contact extends React.Component {
         </div>
 
         <div className="content">
-          Drop me some message at evywetch@gmail.com</div>
+          <h1>Let's get to know each other!</h1>
+          Drop me some message at evywetch@gmail.com or visit my <a href="https://www.linkedin.com/in/evy-wetcharam" onClick={this.onClick}>Linkedin</a></div>
       </div>
     );
   }
