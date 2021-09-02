@@ -20,8 +20,6 @@ class About extends React.Component {
            The purpose of this portfolio is just to practice my front-end skills. 
            I think I like coding but I don't like to work as a developer. I like to be in a talkative and fun environment.
            So I am not suitable in a developer environment. 
-
-
           </p>
         </div>
       </div>
