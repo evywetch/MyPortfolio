@@ -22,7 +22,7 @@ class Contact extends React.Component {
 
         <div className="content">
           <h1>Let's get to know each other!</h1>
-          Drop me some message at evywetch@gmail.com or visit my <a href="https://www.linkedin.com/in/evy-wetcharam" onClick={this.onClick}>Linkedin</a></div>
+          Drop me some message at <a href="mailto:evywetch@gmail.com?subject=Hi there!&body=Hi there!" target="_blank" rel="noopener noreferrer">evywetch@gmail.com</a> or visit my <a href="https://www.linkedin.com/in/evy-wetcharam" onClick={this.onClick}>Linkedin</a></div>
       </div>
     );
   }
